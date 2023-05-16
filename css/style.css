@@ -1,13 +1,16 @@
 body {
   font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 .container {
   background-color: hsl(0, 0%, 94%);
   padding-top: 100px;
   padding-bottom: 100px;
+  height: calc(100vh - 200px);
+  display: flex;
 }
 .container .box {
-  width: 500px;
+  width: 600px;
   background-color: white;
   margin: auto;
   padding: 40px;
@@ -21,12 +24,12 @@ body {
 
 .box form {
   display: flex;
-  margin-bottom: 25px;
 }
 .input-filled {
   display: flex;
   flex-direction: column;
   max-width: 100%;
+  width: calc(100% / 3.5);
 }
 .box .input-filled span {
   color: hsl(0, 1%, 44%);
@@ -42,7 +45,6 @@ body {
 }
 .box .input-filled input {
   width: calc(100% / 3);
-  margin-right: 25px;
   padding: 15px 40px 15px 15px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -84,7 +86,7 @@ body {
 .btn {
   position: relative;
   display: flex;
-  margin: 30px auto;
+  margin: 0 auto;
 }
 .btn::before {
   content: "";
@@ -102,7 +104,7 @@ body {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  padding: 20px;
+  padding: 25px;
   width: 30px;
   height: 30px;
   margin-left: auto;
@@ -113,8 +115,9 @@ body {
   background: #000;
 }
 .rst {
-  font-size: 60px;
+  font-size: 76px;
   font-weight: bold;
+  line-height: 1.1;
 }
 .rst span {
   color: hsl(259, 100%, 65%);
@@ -124,23 +127,30 @@ body {
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
   padding-right: 10px;
-  min-width: 10px;
 }
-@media (max-width: 620px) {
+@media (max-width: 768px) {
   .container .box {
-    width: 250px;
+    width: 280px;
     padding: 30px;
+    margin: auto auto;
   }
-  svg {
+  .btn svg {
     margin: auto;
-    padding: 10px;
+    padding: 15px;
+  }
+  .btn {
+    margin: 10px auto 40px;
+  }
+  .box .input-filled {
+    width: calc(100% / 3);
   }
   .box .input-filled input {
     font-size: smaller;
-    padding: 15px;
+    padding: 15px 30px 15px 15px;
   }
   .error {
     font-size: 8px;
+    max-width: 50px;
   }
   .rst {
     font-size: 40px;
