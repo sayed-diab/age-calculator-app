@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator App</title>
+    <!-- Main Css Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start app -->
+    <div class="container">
+        <div class="box">
+            <form action>
+                <div class="input-filled" data-err="false">
+                    <span>DAY</span>
+                <input id="day" type="text" required placeholder="DD">
+                <div class="error day ">*This field is required</div>
+            </div>
+            <div class="input-filled"  data-err="false">
+                <span>MONTH</span>
+                <input id="month" type="text" required placeholder="MM">
+                <div class="error month">*This field is required</div>
+            </div>
+            <div class="input-filled"  data-err="false">
+                <span>YEAR</span>
+                <input id="year" type="text" required placeholder="YY">
+                <div class="error year">*This field is required</div>
+            </div>
+            </form>
+            <div class="btn">
+                <svg id="svg" xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2">
+                    <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g>
+                    </svg>
+            </div>
+            <div class="rst">
+                <div class="y-rst">
+                    <span id="y">--</span>years
+                </div>
+                <div class="m-rst">
+                    <span id="m">--</span>months
+                </div>
+                <div class="d-rst">
+                    <span id="d">--</span>days
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End app -->
+    <script src="js/main.js"></script>
+</body>
+</html>
