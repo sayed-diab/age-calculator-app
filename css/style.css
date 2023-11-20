@@ -78,10 +78,10 @@ body {
   transition: 0.3s;
 }
 
-.input-filled:hover > span{
+.container .box .input-filled:hover > span{
   color:hsl(259, 100%, 65%);
 }
-.input-filled:hover > input#day{
+.container .box .input-filled:hover > input{
   border-color:hsl(259, 100%, 65%);
 }
 
