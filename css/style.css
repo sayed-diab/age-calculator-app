@@ -31,12 +31,7 @@ body {
   max-width: 100%;
   width: calc(100% / 3.5);
 }
-.input-filled:hover > span{
-  color:hsl(259, 100%, 65%);
-}
-.input-filled:hover > input#day{
-  border-color:hsl(259, 100%, 65%);
-}
+
 .box .input-filled span {
   color: hsl(0, 1%, 44%);
   margin-bottom: 5px;
@@ -67,7 +62,12 @@ body {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
-
+.input-filled:hover > span{
+  color:hsl(259, 100%, 65%);
+}
+.input-filled:hover > input#day{
+  border-color:hsl(259, 100%, 65%);
+}
 .box .input-filled input:focus {
   outline: none;
   border: 1px solid hsl(259, 100%, 65%);
